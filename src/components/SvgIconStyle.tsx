@@ -1,14 +1,7 @@
-import PropTypes from 'prop-types';
+import React from "react"
 import { Box } from '@mui/material';
 
-// ----------------------------------------------------------------------
-
-SvgIconStyle.propTypes = {
-  src: PropTypes.string.isRequired,
-  sx: PropTypes.object,
-};
-
-export default function SvgIconStyle({ src, sx }) {
+function SvgIconStyle({ src, sx }: any) {
   return (
     <Box
       component="span"
@@ -24,3 +17,5 @@ export default function SvgIconStyle({ src, sx }) {
     />
   );
 }
+
+export default SvgIconStyle;

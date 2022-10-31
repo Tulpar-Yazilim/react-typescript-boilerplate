@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 // @mui
 import { alpha, styled } from "@mui/material/styles";
 import { Box } from "@mui/material";
@@ -70,25 +69,25 @@ const RootStyle = styled("span")((props: Props) => {
         }),
   };
 });
-
-// ----------------------------------------------------------------------
-
-Label.propTypes = {
-  children: PropTypes.node,
-  startIcon: PropTypes.node,
-  endIcon: PropTypes.node,
-  color: PropTypes.oneOf([
-    "default",
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-  ]),
-  variant: PropTypes.oneOf(["filled", "outlined", "ghost"]),
-  sx: PropTypes.object,
-};
+//
+//// ----------------------------------------------------------------------
+//
+//Label.propTypes = {
+//  children: PropTypes.node,
+//  startIcon: PropTypes.node,
+//  endIcon: PropTypes.node,
+//  color: PropTypes.oneOf([
+//    "default",
+//    "primary",
+//    "secondary",
+//    "info",
+//    "success",
+//    "warning",
+//    "error",
+//  ]),
+//  variant: PropTypes.oneOf(["filled", "outlined", "ghost"]),
+//  sx: PropTypes.object,
+//};
 
 export default function Label(props: any) {
   const {
