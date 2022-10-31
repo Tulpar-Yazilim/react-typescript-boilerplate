@@ -45,6 +45,13 @@ const TABLE_ROW_ACTIONS = [
   },
 ]
 
+const TABLE_ACTIONS_2 = [
+  {
+    id: 1,
+    name:'Table action'
+  }
+]
+
 const UserList = () => {
   return (
     <div>
@@ -54,12 +61,12 @@ const UserList = () => {
         actions={TABLE_ACTIONS}
         rowActions={TABLE_ROW_ACTIONS}
       >
-        {/*<Slot id="name">
+        <Slot id="name">
           {(item: string) => (<div>{ item.toUpperCase() }</div>)}
         </Slot>
         <Slot id="isVerified">
           {(item: string) => (<div>{ item ? 'Yes' : 'No'}</div>)}
-        </Slot>*/}
+        </Slot>
       </TableList>
     </div>
   )
